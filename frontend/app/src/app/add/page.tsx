@@ -19,7 +19,7 @@ const AddBookingForm = () => {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({serivce:service, doctor_name:doctorName, start_time:startTime, end_time:endTime,date:date})
+            body: JSON.stringify({service:service, doctor_name:doctorName, start_time:startTime, end_time:endTime,date:date})
         })
 
         if (!res.ok) {
